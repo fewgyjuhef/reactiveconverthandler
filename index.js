@@ -1,4 +1,9 @@
-const factorial = (num) => {
-  if (num === 0) return 1;
-  return num * factorial(num - 1);
-};
+function canJump(nums) {
+  let maxJump = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (i > maxJump) return false;
+    maxJump = Math.max(maxJump, i + nums[i]);
+    if (maxJump >= nums.length - 1) return true;
+  }
+  return false;
+}
