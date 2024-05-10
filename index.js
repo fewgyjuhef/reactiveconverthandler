@@ -1,2 +1,3 @@
-const countOccurrences = (arr, value) =>
-  arr.reduce((a, v) => (v === value ? a + 1 : a), 0);
+function getMax(arr) {
+  return Math.max(...arr);
+}
