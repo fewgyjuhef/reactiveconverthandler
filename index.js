@@ -1,3 +1,1 @@
-function getMax(arr) {
-  return Math.max(...arr);
-}
+const reverseString = (str) => str.split("").reverse().join("");
